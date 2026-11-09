@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#123c36">
+  <title>HipoBuy spreadsheet : catégories, photos QC et tailles</title>
+  <meta name="description" content="Explorez les catégories CAFANS et utilisez ce guide HipoBuy spreadsheet en français pour vérifier les liens produits, les mesures, les photos QC et les frais d’envoi.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="HipoBuy spreadsheet : catégories, photos QC et tailles">
+  <meta property="og:description" content="Un guide en français pour comparer les fiches, vérifier les tailles et comprendre les photos QC avant de choisir.">
+  <meta property="og:image" content="https://assets.christiandior.com/is/image/diorprod/683J696A3144C541_SBG_E01-1?wid=540&amp;fmt=webp&amp;qlt=72">
+  <meta property="og:image:alt" content="T-shirt Dior Oblique bleu marine présenté de face sur un cintre">
+  <link rel="preconnect" href="https://assets.christiandior.com">
+  <!-- Recherche Bing : 10 résultats organiques, 9 domaines (hipobuy.me figure deux fois). Axes retenus : catégories, liens produits, contrôle QC et livraison. -->
+  <style>
+    :root{color-scheme:light;--bg:#f5f6ef;--surface:#fff;--ink:#182c27;--muted:#465c54;--green:#123c36;--soft:#e6eee5;--line:#c8d7cc;--gold:#f7d581}
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+    .wrap{width:min(70rem,calc(100% - 2rem));margin-inline:auto}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{line-height:1.14;text-wrap:balance}
+    h2{font-size:clamp(1.6rem,3.5vw,2.5rem);letter-spacing:-.035em}
+    h3{font-size:1.18rem}
+    a{color:inherit;text-underline-offset:.2em}
+    :focus-visible{outline:3px solid #996116;outline-offset:3px}
+    .top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.3rem 1rem;padding-block:.7rem}
+    .brand{font-weight:850}
+    .eyebrow{font-size:.78rem;font-weight:780;letter-spacing:.08em;text-transform:uppercase}
+    .intro{background:var(--green);color:#fff;padding:clamp(1.4rem,4vw,3.1rem) 0;text-align:center}
+    .intro .eyebrow{color:var(--gold)}
+    h1{font-size:clamp(2.2rem,7vw,5.1rem);letter-spacing:-.065em;overflow-wrap:anywhere;margin:.25rem 0 .6rem}
+    .intro p:last-child{max-width:61ch;margin-inline:auto;color:#eef8ef}
+    .categories{background:var(--surface);border-bottom:1px solid var(--line);padding-block:.9rem 1.1rem}
+    .categories ul{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:.5rem 0 0}
+    .categories a{display:inline-flex;align-items:center;min-height:2.75rem;padding:.35rem .73rem;border:1px solid var(--line);border-radius:2rem;font-size:.88rem;font-weight:720;text-decoration:none}
+    .categories a:hover{background:var(--soft);border-color:var(--green);text-decoration:underline}
+    .section{margin-block:clamp(2rem,6vw,4.2rem)}
+    .section h2{margin-bottom:.7rem}
+    .feature{display:grid;grid-template-columns:minmax(10rem,1fr) minmax(0,1.85fr);overflow:hidden;border:1px solid var(--line);border-radius:1.1rem;background:var(--surface)}
+    .feature figure{display:grid;justify-items:center;align-content:center;background:#eef0ee}
+    img{display:block;width:100%;height:auto}
+    .feature img{width:min(100%,20rem);height:auto;aspect-ratio:4/5;object-fit:contain}
+    figcaption{padding:.45rem .75rem;font-size:.86rem;line-height:1.4}
+    .feature-copy{padding:clamp(1.1rem,4vw,3rem);align-self:center}
+    .feature-copy ol{margin:.8rem 0 1.05rem;padding-left:1.4rem}
+    .feature-copy li+li{margin-top:.4rem}
+    .cta{display:inline-flex;align-items:center;min-height:2.75rem;background:var(--gold);color:#302306;border-radius:.4rem;padding:.48rem .9rem;font-weight:760}
+    .cta:hover{background:#ffe7ac}
+    .articles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.85rem}
+    .articles article{border-top:4px solid var(--green);background:var(--surface);padding:1rem}
+    .articles h3{margin-bottom:.55rem}
+    .samples{max-width:73ch;margin-bottom:.9rem;color:var(--muted)}
+    .gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.65rem}
+    .gallery figure{overflow:hidden;border:1px solid var(--line);border-radius:.6rem;background:var(--surface)}
+    .gallery img{aspect-ratio:1;object-fit:contain;background:#f1f1ee}
+    .faq{padding:clamp(1rem,4vw,2rem);border-radius:1rem;background:var(--soft)}
+    .faq details{border-top:1px solid #aabdaf}
+    .faq summary{padding:.7rem 0;cursor:pointer;font-weight:750}
+    .faq details p{max-width:72ch;padding-bottom:.8rem}
+    footer{border-top:1px solid var(--line);padding:1rem 0 1.45rem;font-size:.88rem;color:var(--muted)}
+    footer p{margin-top:.3rem}
+    @media(max-width:48rem){.articles{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:35rem){.feature{grid-template-columns:1fr}.feature img{width:auto;max-width:100%;height:14rem}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebPage",
+        "name":"HipoBuy spreadsheet : catégories, photos QC et tailles",
+        "description":"Explorez les catégories CAFANS et utilisez ce guide HipoBuy spreadsheet en français pour vérifier les liens produits, les mesures, les photos QC et les frais d’envoi.",
+        "inLanguage":"fr",
+        "about":[
+          {"@type":"Thing","name":"Liens produits HipoBuy"},
+          {"@type":"Thing","name":"Photos QC HipoBuy"},
+          {"@type":"Thing","name":"Guide des tailles HipoBuy"},
+          {"@type":"Thing","name":"Livraison HipoBuy en France"}
+        ]
+      },
+      {
+        "@type":"FAQPage",
+        "@id":"#faq",
+        "name":"Questions fréquentes sur le HipoBuy spreadsheet",
+        "inLanguage":"fr",
+        "mainEntity":[
+          {
+            "@type":"Question","name":"Qu’est-ce qu’un HipoBuy spreadsheet ?",
+            "acceptedAnswer":{"@type":"Answer","text":"C’est un répertoire de liens et de notes qui aide à repérer des articles et à comparer leurs variantes. La fiche active reste la référence pour la taille, le stock et les conditions d’achat."}
+          },
+          {
+            "@type":"Question","name":"Que montrent les photos QC HipoBuy ?",
+            "acceptedAnswer":{"@type":"Answer","text":"Les photos QC montrent les détails visibles d’un article, comme une couture, une semelle ou un fermoir. Pour vérifier l’authenticité, demandez aussi une preuve de provenance et un justificatif d’achat."}
+          },
+          {
+            "@type":"Question","name":"Que faire si un lien produit HipoBuy a expiré ?",
+            "acceptedAnswer":{"@type":"Answer","text":"Recherchez le modèle ou sa référence, puis vérifiez que le vendeur, le coloris et la taille correspondent à votre sélection avant de conserver le nouveau lien."}
+          },
+          {
+            "@type":"Question","name":"Comment estimer une livraison HipoBuy en France ?",
+            "acceptedAnswer":{"@type":"Answer","text":"Demandez un devis pour votre code postal et les dimensions du colis préparé. Comparez le poids facturé, les frais de transport et les éventuels frais à l’arrivée, puis ramenez les devis en euros."}
+          },
+          {
+            "@type":"Question","name":"Où mènent les liens de catégories ?",
+            "acceptedAnswer":{"@type":"Answer","text":"Chaque catégorie ouvre le rayon correspondant sur CAFANS. Les fiches CAFANS indiquent les variantes et les conditions disponibles au moment de la consultation."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/mboci/">
+</head>
+<body>
+  <header>
+    <div class="wrap top">
+      <a class="brand" href="https://www.cafans.com">www.cafans.com</a>
+      <span class="eyebrow">Guide d’achat indépendant</span>
+    </div>
+    <div class="intro">
+      <div class="wrap">
+        <p class="eyebrow">Repères pour comparer une fiche produit</p>
+        <h1>HipoBuy spreadsheet</h1>
+        <p>Partez d’un rayon CAFANS. Pour comparer des liens produits HipoBuy, vérifiez la variante, les mesures, les photos de contrôle qualité et les frais d’envoi.</p>
+      </div>
+    </div>
+    <nav class="categories" aria-labelledby="categories">
+      <div class="wrap">
+        <p class="eyebrow" id="categories">Les rayons CAFANS</p>
+        <ul>
+          <li><a href="https://cafans.com/category-911-Shoes.html">Chaussures</a></li>
+          <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Sweats et pulls</a></li>
+          <li><a href="https://cafans.com/category-913-T-Shirts.html">T-shirts</a></li>
+          <li><a href="https://cafans.com/category-914-Jackets.html">Vestes</a></li>
+          <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Pantalons et shorts</a></li>
+          <li><a href="https://cafans.com/category-916-Headwear.html">Casquettes et bonnets</a></li>
+          <li><a href="https://cafans.com/category-917-Sets.html">Ensembles</a></li>
+          <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Sous-vêtements</a></li>
+          <li><a href="https://cafans.com/category-919-Jersey.html">Maillots</a></li>
+          <li><a href="https://cafans.com/category-920-Accessories.html">Accessoires</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="section feature" aria-labelledby="tri">
+      <figure>
+        <img src="https://assets.christiandior.com/is/image/diorprod/683J696A3144C541_SBG_E01-1?wid=540&amp;fmt=webp&amp;qlt=72"
+             srcset="https://assets.christiandior.com/is/image/diorprod/683J696A3144C541_SBG_E01-1?wid=360&amp;fmt=webp&amp;qlt=70 360w, https://assets.christiandior.com/is/image/diorprod/683J696A3144C541_SBG_E01-1?wid=540&amp;fmt=webp&amp;qlt=72 540w"
+             sizes="(max-width:35rem) 180px, 320px" width="540" height="675" alt="T-shirt Dior Oblique bleu marine présenté de face sur un cintre" loading="eager" fetchpriority="high">
+        <figcaption>Dior Oblique · exemple de coupe</figcaption>
+      </figure>
+      <div class="feature-copy">
+        <h2 id="tri">Les trois vérifications avant de garder un lien</h2>
+        <ol>
+          <li><strong>Identifiez le modèle.</strong> Relevez la référence, le coloris et le nom du vendeur. Si le lien mène vers une autre variante, comparez à nouveau les photos.</li>
+          <li><strong>Comparez en centimètres.</strong> Mesurez un vêtement similaire à plat. Pour un T-shirt, prenez la largeur entre les aisselles et la longueur du dos au même point de départ.</li>
+          <li><strong>Conservez la date.</strong> Notez la date de consultation, la devise du prix affiché et la taille sélectionnée. Rouvrez la fiche avant de commander pour vérifier le stock et les conditions de retour.</li>
+        </ol>
+        <a class="cta" href="https://www.cafans.com">Ouvrir le catalogue CAFANS</a>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="dossiers">
+      <h2 id="dossiers">Trois fiches pratiques avant l’achat</h2>
+      <div class="articles">
+        <article>
+          <h3>Guide des tailles HipoBuy</h3>
+          <p>Pour des baskets, comparez la longueur de semelle intérieure à celle d’une paire qui vous va. Pour un sweat, ajoutez la largeur d’épaules et la longueur des manches. Pour un pantalon, comparez le tour de taille et l’entrejambe. Si le tableau des tailles donne une largeur à plat, doublez-la pour la comparer à un tour de taille.</p>
+        </article>
+        <article>
+          <h3>Lire les photos QC HipoBuy</h3>
+          <p>Les photos de contrôle qualité prises en entrepôt sont plus utiles quand elles montrent la variante exacte. Pour des chaussures, demandez une vue des deux talons et des semelles. Pour une casquette, regardez la broderie et la fermeture réglable. Pour un bracelet, vérifiez le fermoir et l’état des bords en gros plan.</p>
+        </article>
+        <article>
+          <h3>Livraison HipoBuy en France</h3>
+          <p>Comparez deux devis pour la même destination et le même contenu. Une boîte à chaussures peut augmenter le poids volumétrique. Vérifiez le poids retenu pour la facturation, les frais de conversion en euros et les éventuels frais à l’arrivée. Pour la Belgique ou la Suisse, refaites le calcul avec le pays de destination et la devise de paiement.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="reperes">
+      <h2 id="reperes">Les détails à examiner selon la pièce</h2>
+      <p class="samples">Ces photos éditoriales proviennent des marques. Pour vérifier un article précis, consultez sa fiche et les photos QC de votre commande.</p>
+      <div class="gallery">
+        <figure>
+          <img src="https://static.nike.com/a/images/c_limit,w_384,f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b7d9211c-26e7-431a-ac24-b0540fb3c00f/AIR+FORCE+1+%2707.png" width="384" height="480" alt="Nike Air Force 1 ’07 blanche vue de profil" loading="lazy" decoding="async">
+          <figcaption><strong>Nike Air Force 1 ’07</strong><br>Profil et raccord de la semelle</figcaption>
+        </figure>
+        <figure>
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1789492532/A00CSP_4HBL0_1066_001_100_0000_Light-gg-cotton-canvas-baseball-hat.jpg" width="490" height="490" alt="Casquette Gucci en toile GG noire avec bande verte et rouge sur la visière" loading="lazy" decoding="async">
+          <figcaption><strong>Gucci GG</strong><br>Courbure de la visière</figcaption>
+        </figure>
+        <figure>
+          <img src="https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton--M46987_PM2_Front%20view.jpg?wid=480&amp;hei=480" width="480" height="480" alt="Sac Louis Vuitton Neverfull MM en toile Monogram marron vu de face" loading="lazy" decoding="async">
+          <figcaption><strong>Louis Vuitton Neverfull MM</strong><br>Forme et attaches des anses</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.hermes.com/is/image/hermesproduct/700001FP8A_front_wm_101?wid=420&amp;hei=420&amp;fit=fit&amp;$product_default_bg$" width="420" height="420" alt="Bracelet Hermès Clic H en émail orange avec fermoir argenté" loading="lazy" decoding="async">
+          <figcaption><strong>Hermès Clic H</strong><br>Émail et fermoir</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq" aria-labelledby="questions">
+      <h2 id="questions">Questions fréquentes sur le HipoBuy spreadsheet</h2>
+      <details open>
+        <summary>Qu’est-ce qu’un HipoBuy spreadsheet ?</summary>
+        <p>C’est un répertoire de liens et de notes qui aide à repérer des articles et à comparer leurs variantes. La fiche active reste la référence pour la taille, le stock et les conditions d’achat.</p>
+      </details>
+      <details>
+        <summary>Que montrent les photos QC HipoBuy ?</summary>
+        <p>Les photos QC montrent les détails visibles d’un article, comme une couture, une semelle ou un fermoir. Pour vérifier l’authenticité, demandez aussi une preuve de provenance et un justificatif d’achat.</p>
+      </details>
+      <details>
+        <summary>Que faire si un lien produit HipoBuy a expiré ?</summary>
+        <p>Recherchez le modèle ou sa référence, puis vérifiez que le vendeur, le coloris et la taille correspondent à votre sélection avant de conserver le nouveau lien.</p>
+      </details>
+      <details>
+        <summary>Comment estimer une livraison HipoBuy en France ?</summary>
+        <p>Demandez un devis pour votre code postal et les dimensions du colis préparé. Comparez le poids facturé, les frais de transport et les éventuels frais à l’arrivée, puis ramenez les devis en euros.</p>
+      </details>
+      <details>
+        <summary>Où mènent les liens de catégories ?</summary>
+        <p>Chaque catégorie ouvre le rayon correspondant sur CAFANS. Les fiches CAFANS indiquent les variantes et les conditions disponibles au moment de la consultation.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <a class="brand" href="https://www.cafans.com">www.cafans.com</a>
+    <p>Guide éditorial indépendant. Les marques sont citées pour identifier les modèles illustrés.</p>
+  </footer>
+</body>
+</html>
